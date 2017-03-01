@@ -10,7 +10,7 @@
 	<!-- taxi session -->
 	<bean id="seckillSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="seckillDataSourceProxy" />
-		<property name="mapperLocations" value="classpath*:xmlmapper/**/*.xml" />
+		<property name="mapperLocations" value="classpath*:com/mifuns/shiro/xmlmapper/**/*.xml" />
 		<property name="configLocation" value="classpath:mybatis-config.xml"/>
 	</bean>
 	<bean id="seckillSession" class="org.mybatis.spring.SqlSessionTemplate">
@@ -18,7 +18,7 @@
 	</bean>
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionTemplateBeanName" value="seckillSession" />
-		<property name="basePackage" value="com.mifuns.api.response.mapper" />
+		<property name="basePackage" value="com.mifuns.shiro.mapper" />
 	</bean>
 
 
