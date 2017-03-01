@@ -11,5 +11,42 @@
 
     <artifactId>shiro-service</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.mifuns.shiro</groupId>
+            <artifactId>shiro-commons</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mifuns.shiro</groupId>
+            <artifactId>shiro-config</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mifuns.shiro</groupId>
+            <artifactId>shiro-db</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.mifuns.shiro</groupId>
+            <artifactId>shiro-facade</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+
+        <!--DAO框架:mybatis依赖-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+        </dependency>
+        <!--mybatis自身实现的spring整合依赖-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+        </dependency>
+    </dependencies>
+
 
 </project>
