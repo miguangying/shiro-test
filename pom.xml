@@ -10,6 +10,12 @@
     <version>1.0.0</version>
     <modules>
         <module>shiro-web</module>
+        <module>shiro-service</module>
+        <module>shiro-commons</module>
+        <module>shiro-facade</module>
+        <module>shiro-db</module>
+        <module>shiro-config</module>
+        <module>shiro-app</module>
     </modules>
 
     <properties>
